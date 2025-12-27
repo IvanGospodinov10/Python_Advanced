@@ -1,6 +1,3 @@
 Python Advanced
 
-
-<img 
-  src="https://github.com/user-attachments/assets/a673573e-7a5b-40b2-adda-2e7c9b9548cf" 
-  width="600">
+<img src="image/Guide-to-Advanced-Python-Programming-01-2048x1151.png" width="50%">
