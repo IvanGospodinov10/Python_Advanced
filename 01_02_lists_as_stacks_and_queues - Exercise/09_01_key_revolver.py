@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class BulletStack:
     def __init__(self, bullets):
         self.bullets = bullets
@@ -12,6 +13,7 @@ class BulletStack:
 
     def count(self):
         return len(self.bullets)
+
 
 class LockQueue:
     def __init__(self, locks):
@@ -29,6 +31,7 @@ class LockQueue:
     def count(self):
         return len(self.locks)
 
+
 class Gun:
     def __init__(self, barrel_size):
         self.barrel_size = barrel_size
@@ -43,8 +46,9 @@ class Gun:
     def reload(self):
         self.current_barrel = self.barrel_size
 
+
 class Mission:
-    def __init__(self,price_per_bullet, barrel_size, bullets, locks, money):
+    def __init__(self, price_per_bullet, barrel_size, bullets, locks, money):
         self.price_per_bullet = price_per_bullet
         self.money = money
 
@@ -80,6 +84,8 @@ class Mission:
             print(f"{bullets_left} bullets left. Earned ${money_left}")
         else:
             print(f"Couldn't get through. Locks left: {self.locks.count()}")
+
+
 # ----------------
 # Input handling
 # ----------------
