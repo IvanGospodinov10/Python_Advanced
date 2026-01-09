@@ -15,7 +15,7 @@ while stops < petrol_pumps:
     for i in range(petrol_pumps):
         fuel += pumps[i]["fuel"]
         dist = pumps[i]["dist"]
-        if fuel <= dist:
+        if fuel < dist:
             pumps.rotate(-1)
             start_position += 1
             stops = 0
