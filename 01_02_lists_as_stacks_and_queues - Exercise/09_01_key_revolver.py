@@ -73,7 +73,7 @@ class Mission:
                 print("Ping!")
 
             if self.gun.need_reload() and self.bullets.has_bullets():
-                print("Reload!")
+                print("Reloading!")
                 self.gun.reload()
         self._print_result()
 
