@@ -24,5 +24,5 @@ if cups and not bottles:
     print(f"Wasted litters of water: {wasted_water}")
 else:
     while bottles:
-        print(f"{bottles.pop()}", end=' ')
+        print(f"Bottles: {bottles.pop()}", end=' ')
         print(f"\nWasted litters of water: {wasted_water}")
