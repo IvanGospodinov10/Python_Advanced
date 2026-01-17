@@ -17,8 +17,6 @@ while chocolates and milk_cups and milkshakes < 5:
         if chocolates[-1] <= 0:
             chocolates.pop()
             continue
-    if not chocolates or not milk_cups:
-        break
 
     if chocolates[-1] == milk_cups[0]:
         milkshakes += 1
