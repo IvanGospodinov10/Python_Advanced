@@ -4,7 +4,7 @@ matrix = []
 symbol_index = []
 
 for _ in range(n):
-    matrix.append([char for char in input()])
+    matrix.append(list(input()))
 
 searched_symbol = input()
 
