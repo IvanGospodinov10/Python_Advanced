@@ -26,4 +26,4 @@ max_submatrix = [matrix[r][max_col:max_col + 3] for r in range(max_row, max_row 
 
 # for row in max_submatrix:
 #     print(*row)
-[print(row) for row in max_submatrix]
+[print(*row) for row in max_submatrix]
