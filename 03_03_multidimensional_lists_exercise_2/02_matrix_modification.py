@@ -8,16 +8,12 @@ while True:
     if command[0] == 'END':
         break
 
-    index_1 = int(command[1])
-    index_2 = int(command[2])
-    number = int(command[3])
-
-
-    if 0<= index_1 < n and 0<= index_2 < n:
+    row, col, number = map(int, command[1:])
+    if 0<= row < n and 0<= col < n:
         if command[0] == "Add":
-            matrix[index_1][index_2] += number
+            matrix[row][col] += number
         elif command[0] == "Subtract":
-            matrix[index_1][index_2] -= number
+            matrix[row][col] -= number
     else:
         print("Invalid coordinates")
 
