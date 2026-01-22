@@ -1,5 +1,3 @@
-from encodings.aliases import aliases
-
 n = int(input())
 
 matrix = []
@@ -12,7 +10,6 @@ for row in range(n):
         if matrix[row][col] == "A":
             allice = [row, col]
             matrix[row][col] = "*"
-
 
 directions = {
     "up": (-1, 0),
@@ -39,13 +36,9 @@ while tea_bags < 10:
     matrix[new_row][new_col] = "*"
     allice = [new_row, new_col]
 
-
 if tea_bags < 10:
     print("Alice didn't make it to the tea party.")
 else:
     print("She did it! She went to the party.")
 
-for row in matrix:
-    print(*row)
-
-
+[print(*row) for row in matrix]
