@@ -1,12 +1,15 @@
 class NameTooShortError(Exception):
+    """Raise it when the name in the email is less than or equal to 4 characters"""
     pass
 
 
 class MustContainAtSymbolError(Exception):
+    """Raise it when there is no "@" in the email"""
     pass
 
 
 class InvalidDomainError(Exception):
+    """Raise it when the domain of the email is invalid (valid domains are: .com, .bg, .net, .org)"""
     pass
 
 
