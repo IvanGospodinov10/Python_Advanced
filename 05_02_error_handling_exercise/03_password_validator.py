@@ -39,14 +39,18 @@ def validate_password(password_check):
         raise PasswordTooCommonError("Password must be a combination of digits, letters, and special characters")
 
 
-while True:
-    password = input()
-    if password == "Done":
-        break
+def main():
+    while True:
+        password = input()
+        if password == "Done":
+            break
 
-    try:
-        validate_password(password)
-        print("Password is valid")
+        try:
+            validate_password(password)
+            print("Password is valid")
 
-    except Exception as error:
-        raise
+        except Exception as error:
+            raise
+
+
+main()
