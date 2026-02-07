@@ -72,7 +72,11 @@ class BankAccount:
 class OnlineBankingApp:
 
     def __init__(self):
-        pin, balance, age = map(int, input().split(", "))
+        pin_str, balance_str, age_str = input().split(", ")
+
+        pin = pin_str
+        balance = float(balance_str)
+        age = int(age_str)
         self.account = BankAccount(pin, balance, age)
 
     def run(self):
@@ -84,7 +88,7 @@ class OnlineBankingApp:
 
             if command == "Send Money":
                 amount = int(args[0])
-                entered_pin = int(args[1])
+                entered_pin = args[1]
                 self.account.send_money(amount, entered_pin)
 
             elif command == "Receive Money":
