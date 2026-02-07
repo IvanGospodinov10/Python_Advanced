@@ -1,0 +1,16 @@
+.html
+- - - index.html
+.js
+- - - index.js
+.py
+- - - directory_traversal.py
+- - - directory_traversal_recursive.py
+- - - even_lines.py
+- - - file_manipulation.py
+- - - line_numbers.py
+.txt
+- - - log.txt
+- - - output.txt
+- - - report.txt
+- - - text.txt
+- - - text.txt

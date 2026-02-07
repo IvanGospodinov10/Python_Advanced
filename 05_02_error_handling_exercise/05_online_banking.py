@@ -54,7 +54,11 @@ def received_money(amount, balance):
 
 
 def main():
-    pin, balance, age = list(map(int, input().split(", ")))
+    pin_str, balance_str, age_str = input().split(", ")
+
+    pin = int(pin_str)
+    balance = float(balance_str)
+    age = int(age_str)
 
     while True:
         command, *args = input().split("#")
