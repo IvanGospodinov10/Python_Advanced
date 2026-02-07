@@ -56,7 +56,7 @@ def received_money(amount, balance):
 def main():
     pin_str, balance_str, age_str = input().split(", ")
 
-    pin = int(pin_str)
+    pin = pin_str
     balance = float(balance_str)
     age = int(age_str)
 
@@ -67,8 +67,8 @@ def main():
             break
 
         if command == "Send Money":
-            amount = int(args[0])
-            entered_pin = int(args[1])
+            amount = float(args[0])
+            entered_pin = args[1]
             balance = send_money(age, amount, entered_pin, balance, pin)
         elif command == "Receive Money":
             amount = int(args[0])
