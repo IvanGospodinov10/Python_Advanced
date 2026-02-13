@@ -18,7 +18,7 @@ class PasswordContainsSpacesError(Exception):
     pass
 
 
-SPECIAL_CHARACTER = ("@", "*", "&")
+SPECIAL_CHARACTER = ("@", "*", "&", "%")
 
 
 def validate_password(password_check):
